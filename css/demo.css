@@ -1,0 +1,32 @@
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+
+.cont-social {height: 54px;width: 54px;padding: 32px 0px 50px 0px;}
+
+
+#contenido {
+    font-family: 'UniversCE 45 Light';
+    height: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 160px;
+    padding: 10px 10px 10px 10px;
+	width:700px;
+}
+
+
+#contenido > header,
+.main {
+	padding: 0 30px 50px 30px;
+	width: 100%;
+	max-width: 600px;
+	margin: 0 auto;
+}

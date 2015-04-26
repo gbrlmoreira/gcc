@@ -1,0 +1,8 @@
+
+@font-face {
+	font-family: 'UniversLT-CondensedOblique';
+	src: url('UniversLT-CondensedOblique.eot?') format('eot'), 
+	     url('UniversLT-CondensedOblique.woff') format('woff'), 
+	     url('UniversLT-CondensedOblique.ttf')  format('truetype'),
+	     url('UniversLT-CondensedOblique.svg#UniversLT-CondensedOblique') format('svg');
+}

@@ -1,0 +1,8 @@
+
+@font-face {
+	font-family: 'UniversLT-Condensed';
+	src: url('UniversLT-Condensed.eot?') format('eot'), 
+	     url('UniversLT-Condensed.woff') format('woff'), 
+	     url('UniversLT-Condensed.ttf')  format('truetype'),
+	     url('UniversLT-Condensed.svg#UniversLT-Condensed') format('svg');
+}

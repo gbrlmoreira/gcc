@@ -1,0 +1,435 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+@font-face {
+    font-family: 'UniversLT-Condensed';
+    src: url('../fonts/UniversLT-Condensed/UniversLT-Condensed.eot?') format('eot'), 
+         url('../fonts/UniversLT-Condensed/UniversLT-Condensed.woff') format('woff'), 
+         url('../fonts/UniversLT-Condensed/UniversLT-Condensed.ttf')  format('truetype'),
+         url('../fonts/UniversLT-Condensed/UniversLT-Condensed.svg#UniversLT-Condensed') format('svg');
+}
+
+@font-face {
+    font-family: 'UniversCE 45 Light';
+    src: url('../fonts/UniversCE-45-Light/univers_ce_45_light-webfont.eot?') format('eot'), 
+         url('../fonts/UniversCE-45-Light/univers_ce_45_light-webfont.woff') format('woff'), 
+         url('../fonts/UniversCE-45-Light/univers_ce_45_light-webfont.ttf')  format('truetype'),
+         url('../fonts/UniversCE-45-Light/univers_ce_45_light-webfont.svg#univers_ce_45_light-webfont') format('svg');
+}
+
+/*Propiedades generales*/
+
+p {text-align:justify;}
+
+table {text-align: center;border: 2px white solid;}
+
+td p {padding: 0px 32px 12px 32px;text-align: center;text-align:justify;}
+
+td {vertical-align:top;width:25%;}
+
+h1,h2,h3,h4 {color:white;}
+
+body {top: 0;left: 0;width: 100%;height: 100%;  position: absolute;overflow: auto;background-color:#3BAEB3;overflow:auto;}
+
+/*Propiedades contenedor*/
+
+#inicio{margin-left: 350px;}
+
+#mail{margin-left: 10px;}
+
+#tabla-audio {border: none;}
+#tabla-audio img {padding:65px 0px 0px 0px;}
+
+#tabla-novedades {border: none;}
+#tabla-novedades img {padding:20px 0px 20px 0px;}
+
+#tabla-archivos {border: none;}
+
+#colFotos{width: 100px;background-color: blue; overflow:hidden;float:left;}
+
+.foto-cont {padding: 2px 2px 2px 2px;width: 100%;display:block;}
+
+.foto {padding: 2px 2px 2px 2px;width: 100%;height:auto;}
+
+#logofondo{background: url('../img/logo.png') no-repeat;position:absolute;right:10px;bottom:10px;height:248px;width:235px;}
+
+#navegador {position:absolute;left:73px;top:0px;width:582px;height:130px;}
+
+#fondo {
+    background: url('../img/fondo.jpg') no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 71%;
+    min-width: 852px;
+}
+
+#placa-transparente {opacity:0.7;background-color:black;position:absolute;right:0px;width: 732px;height: 100%;}
+
+#cont-centro {
+    position: absolute;
+    right: 0px;
+    width: 732px;
+    height: 100%;
+    top: 0px;
+}
+
+#contenido {
+    font-family: 'UniversCE 45 Light';
+    height: 50%;
+    max-height:1920px;
+    overflow: auto;
+    position: absolute;
+    top: 160px;
+    padding: 10px 10px 10px 10px;
+    left:0px;
+    width:712px;
+}
+#contenido p {color:white;font-size:14px;}
+#contenido a {color:white;text-decoration:none;}
+#contenido a:hover{color:#3BAEB3;}
+
+#pie {
+    position:absolute;
+    height: 100px;
+    bottom: 15px;
+    width: 100%;
+}
+#pie ul{-webkit-transition: all .05s ease;-moz-transition: all .05s ease-in;-o-transition: all .05s ease-in;-ms-transition: all .05s ease-in;transition: all .05s ease-in; }
+
+#idiomas {list-style:none;}
+#idiomas ul {float:left;padding:0 0 0 0;}
+
+/*Propiedades elementos 3D*/
+
+#perspectiva {position:absolute;top: 15px;height: 151px;perspective-origin: 0px;perspective-origin: 0px 0px;}
+
+#persp-social {position: absolute;top: 157px;left: 787px;width: 57px;perspective: 0px;perspective-origin: 0px 0px;}
+
+.prisma {height: 60px;width: 190px;transition: transform 0.15s linear;-webkit-transition: -webkit-transform 0.15s linear;transition: transform 0.15s linear;-webkit-transform-style: preserve-3d; transform-style: preserve-3d;}
+
+.cubo {height: 40px;width: 40px;-webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(-45deg);transform: rotateX(0deg) rotateY(0deg) rotateZ(-45deg);-webkit-transition: -webkit-transform 0.25s linear;transition: transform 0.25s linear;-webkit-transform-style: preserve-3d; transform-style: preserve-3d;}
+
+.cont-prisma {height: 60px;width: 190px;}
+
+.cont-social {height: 40px;width: 48px;padding: 32px 0px 0px 0px;}
+
+.face-A {position: absolute;padding: 0px;opacity: 1;border: 1px #D3D3D3 solid; height: 60px;width: 190px;}
+.face-A p {font-family: 'UniversLT-Condensed'; color: white; padding: 20px 0px 0px 12px;}
+
+.face-B {position: absolute;padding: 0px;opacity: 1;border: 1px #D3D3D3 solid;height: 40px;width: 40px;}
+
+#coro {position:absolute;top:0px;left:-95px;}
+
+#director {position:absolute;top:0px;left:100px;}
+
+#temporada {position:absolute;top:0px;left:295px;}
+
+#archivos {position:absolute;top:0px;left:490px;}
+
+#benefactores {position:absolute;top:65px;left:-95px;}
+
+#audio {position:absolute;top:65px;left:100px;}
+
+#galeria {position:absolute;top:65px;left:295px;}
+
+#novedades {position:absolute;top:65px;left:490px;}
+
+.one {transform: rotateX(0deg) translateX(0px) translateY(0px) translateZ(20px);-webkit-transform: rotateX(0deg) translateX(0px) translateY(0px) translateZ(20px);background-color:white;}
+
+.two {transform: rotateX(0deg) translateX(0px) translateY(0px) translateZ(-20px);-webkit-transform: rotateX(0deg) translateX(0px) translateY(0px) translateZ(-20px);background-color:white;}
+
+.three {transform: rotateX(90deg) translateX(0px) translateY(0px) translateZ(20px);-webkit-transform: rotateX(90deg) translateX(0px) translateY(0px) translateZ(20px);background-color:black;}
+
+.four {transform: rotateX(90deg) translateX(0px) translateY(-0px) translateZ(-20px);-webkit-transform: rotateX(90deg) translateX(0px) translateY(-0px) translateZ(-20px);background-color:white;}
+
+.five {transform: rotateY(90deg) translateX(0px) translateY(0px) translateZ(20px);-webkit-transform: rotateY(90deg) translateX(0px) translateY(0px) translateZ(20px);background-color:black;}
+
+.six {transform: rotateY(90deg) translateX(0px) translateY(0px) translateZ(-20px);-webkit-transform: rotateY(90deg) translateX(0px) translateY(0px) translateZ(-20px);background-color:white;}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
